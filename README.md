@@ -9,3 +9,9 @@ source blockchain-env\Scripts\activate
 '''
 pip3 install -r requirements.txt
 '''
+
+***Run the application and API***
+Make sure to activate virtual enviroment.
+'''
+python3 -m backend.app
+'''
