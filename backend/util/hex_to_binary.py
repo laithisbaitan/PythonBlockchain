@@ -21,9 +21,10 @@ HEX_TO_BINARY_CONVERSION_TABLE = {
 
 def hex_to_binary(hex_string):
     binary_string = ''
+
     for character in hex_string:
         binary_string += HEX_TO_BINARY_CONVERSION_TABLE[character]
-    
+
     return binary_string
 
 def main():
@@ -33,13 +34,12 @@ def main():
 
     binary_number = hex_to_binary(hex_number)
     print(f'binary_number: {binary_number}')
-    
+
     original_number = int(binary_number, 2)
     print(f'original_number: {original_number}')
 
     hex_to_binary_crypto_hash = hex_to_binary(crypto_hash('test-data'))
     print(f'hex_to_binary_crypto_hash: {hex_to_binary_crypto_hash}')
-
 
 if __name__ == '__main__':
     main()
